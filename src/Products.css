@@ -1,0 +1,102 @@
+button:hover  , a:hover{
+    cursor: pointer !important;
+}
+.product-banner{
+    background-image: url('../public/Sweets_desktop_752932_cleanup.jpg');
+    padding: 5vw;
+    background-size: contain;
+    background-attachment: fixed;
+}
+.shop{
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 5vw;
+    text-align: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns:3fr 1fr;
+    
+}
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1vw;
+    text-align: center;
+    column-gap: 1vw;
+    row-gap: 3vw;
+}
+.product{
+    width: 40%;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+}
+
+.product img{
+    z-index: -1;
+    transition: all ease-in 0.4s;
+    width: 25vw;
+    height: 20vw;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.product-list-filters{
+    z-index:0;
+    margin-top: 1vw;
+    padding-right: 2vw;
+    position: sticky;
+    top:10vw;
+    height: fit-content;
+    font-size: 2vw;
+    font-family: 'Dancing Script', cursive;
+}
+.checkbox{
+    width: 2vw;
+    height: 2vw;
+    accent-color: goldenrod;
+}
+.counter{
+    position: absolute;
+    font-size: 2.5vw;
+}
+.price{
+    font-family: 'Dancing Script', cursive !important;
+    font-size: 2vw;
+}
+.hidden-button{
+    cursor: pointer;
+    position: absolute;
+    margin-top: 12.32%;
+    /* margin-left: 9%; */
+    display: none;
+    transition: all ease-in 0.4s;
+}
+.hidden-button button{
+    animation: textanimate .2s;
+    position: relative;
+    cursor:pointer;
+    z-index: 1;
+    width:25vw;
+    border:none;
+    background:rgb(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    padding:1vw;
+    font-size: 1.5vw;
+    font-weight: 900;
+    transition: all ease-in 0.4s;
+    left:2vw;
+}
+.product:hover > .hidden-button {
+    display: block;
+    transition: all ease-in 0.4s;
+    /* cursor: pointer; */
+}
+.product:hover > img{
+    transition: all ease-in 0.4s;
+    opacity: 0.5;
+}
+
+.errP{
+    font-family: 'Dancing Script', cursive!important;
+    font-size: 8vw;
+}
+

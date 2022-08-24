@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Dancing+Script&family=Great+Vibes&family=Pacifico&display=swap');
+.cart{
+    width:100%;
+}
+.cart-table{
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+    text-align: left;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8vw;
+    font-weight: 500 !important;
+}
+.cart-table img{
+    width:10vw;
+    /* height:5vw; */
+    border-radius: 5px;
+}
+.quantity{
+    text-align: center;
+    border-collapse: collapse;
+    border:solid 1px goldenrod;
+}
+.quantity tr , .quantity td{
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 1.5vw;
+    border:solid 1px goldenrod;
+    border-collapse: collapse;
+    cursor: pointer;
+}
+.cart-table td , .cart-table th{
+    padding: 1vw;
+}
+.hover-td:hover{
+    background-color: #daa520;
+    color:white;
+}
+.hover-del:hover{
+    color:red !important;
+}
+.modal-body{
+    padding:1vw;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 24;
+    background: rgb(245,203,97);
+    background: linear-gradient(83deg, rgba(245,203,97,1) 0%, rgba(214,167,50,1) 55%, rgba(244,174,0,1) 100%);
+}
+.modal-body table , .modal-body tr , .modal-body th , .modal-body td{
+    border-collapse:collapse;
+    text-align: left;
+}
+.modal-body table{
+    width:100%;
+    margin: 1vw;
+}
+.modal-body td{
+    padding: 0.5vw;
+}
+.modal-body td input , .modal-body td textarea{
+    width:80%;
+    border:none;
+    border-radius: 5px;
+    padding:0.5vw;
+}
+.modal-body td  button{
+    font-family:cursive;
+    /* font-size: 2vw; */
+    font-weight: 900;
+    border:none;
+    color:rgb(255, 255, 255);
+    background-color: #00A400;
+    padding: 1vw;
+    border-radius: 5px;
+}
+
+.empty{
+    /* border:solid; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:80vh;
+}
+.empty a{
+    text-decoration: none;
+    color:#00a400;
+    background-color: #f4f4f4;
+    padding: 2vw;
+    width:25%;
+    font-family: cursive;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.empty a:hover{
+    background-color: #00A400;
+    color:white;
+}
+
+
+@media screen and (max-width: 767px) {
+    .responsive{
+        font-size:larger !important;
+    }
+}
+@media screen and (max-width: 767px) {
+    .cart-table , .cursive4 button , .responsive{
+        font-size: medium !important;
+    }
+}
+@media screen and (max-width: 500px) {
+    .cart-table , .cursive4 button , .responsive{
+        font-size:small !important;
+    }
+}
+@media screen and (max-width: 300px) {
+    .cart-table , .cursive4 button{
+        font-size:smaller !important;
+    }
+}
+
+

@@ -1,0 +1,167 @@
+.home{
+    overflow-x: hidden;
+    background-image: url('https://dolcino.qodeinteractive.com/wp-content/uploads/2018/11/h1-parallax-4.jpg');
+    background-size: contain;
+    /* background-repeat: no-repeat; */
+    z-index:-1;
+    padding-top: 12vw;
+    padding-bottom:12vw;
+    background-attachment:fixed;
+    /* height:70vh; */
+}
+
+.carousel{
+    width: 90vw;
+    
+}
+
+.cursive{
+    color: goldenrod;
+    font-size:8vw;
+    font-family: 'Great Vibes', cursive;
+    font-weight:500;
+    animation: textanimate .5s;
+
+}
+@keyframes textanimate {
+    0%{transform:scale(0%)}
+    10%{transform:scale(10%)}
+    20%{transform:scale(20%)}
+    30%{transform:scale(30%)}
+    40%{transform:scale(40%)}
+    50%{transform:scale(50%)}
+    60%{transform:scale(60%)}
+    70%{transform:scale(70%)}
+    80%{transform:scale(80%)}
+    90%{transform:scale(90%)}
+    100%{transform:scale(100%)}
+}
+.cursive2{
+    color: rgb(9, 9, 9);
+    font-size:5vw;
+    font-family: 'Rubik Dirt', cursive;
+    font-weight:500;
+}
+.cursive3{
+    font-size:2vw;
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-weight:500;
+}
+.cursive4 button{
+    border: 1px solid goldenrod;
+    background: transparent;
+    color:goldenrod;
+    padding: 1vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    margin-top: 2vw;
+    font-size: 2vw;
+    /* width: 20vw; */
+    cursor: pointer;
+}
+.cursive4 button:hover {
+    background-color: goldenrod;
+    color: white;
+}
+.img-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    text-align: center;
+    float: left;
+    background: transparent;
+}
+.our-story{
+    background-image: url('https://dolcino.qodeinteractive.com/wp-content/uploads/2018/11/h1-parallax-2-1.jpg');
+    padding:5vw;
+    background-size:cover;
+    text-align: center;
+    background-attachment: fixed;
+}
+.our-story-content{
+    width:70%;
+    margin-left: auto;
+    margin-right: auto;
+    /* height:70vh; */
+    background-color: rgba(255, 255, 255 , 0.8);
+    font-size: 5vw;
+    border-radius: 10px;
+}
+
+.category{
+    padding: 2vw;
+    text-align: center;
+}
+.flex-category{
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 3vw;
+}
+.flex-item img{
+    z-index: -1;
+    width: 100%;
+    /* height: 250px; */
+    cursor: pointer;
+}
+
+.big{
+    width: 65% !important;
+    max-height: 150px !important; 
+}
+.flex-item{
+    transition: ease-in .3s;
+}
+
+.flex-item:hover{
+    transform: scale(1.15);
+    transition: ease-in 0.2s;
+}
+.circle{
+    margin-bottom: 1vw;
+    width: 20vw;
+    /* min-height: 2vw; */
+}
+.circle img{
+    width: 20vw;
+    min-height: 25vh;
+}
+.circle .big{
+    width: 20vw;
+    /* height: 25vh; */
+}
+.flex-item{
+    height: 30vh !important;
+}
+.barfi img{
+    width: 20vw;
+    height: 23vh;
+}
+
+@media screen and (max-width: 550px) {
+    .flex-item{
+        height: 25vh;
+    }
+    .circle{
+        margin-bottom: 1vw;
+        width: 20vw;
+        /* min-height: 2vw; */
+    }
+    .circle img{
+        width: 20vw;
+        min-height: 20vh;
+    }
+    
+    .barfi img{
+        width: 20vw;
+        max-height: 15vh;
+    }
+}
